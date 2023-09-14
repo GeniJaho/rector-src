@@ -50,6 +50,7 @@ use Rector\Core\Application\FileProcessor;
 use Rector\Core\Configuration\ConfigInitializer;
 use Rector\Core\Configuration\RenamedClassesDataCollector;
 use Rector\Core\Console\Command\ListRulesCommand;
+use Rector\Core\Console\Command\MakeRuleCommand;
 use Rector\Core\Console\Command\ProcessCommand;
 use Rector\Core\Console\Command\SetupCICommand;
 use Rector\Core\Console\Command\WorkerCommand;
@@ -399,6 +400,7 @@ final class LazyContainerFactory
         $rectorConfig->tag(ProcessCommand::class, Command::class);
         $rectorConfig->tag(WorkerCommand::class, Command::class);
         $rectorConfig->tag(SetupCICommand::class, Command::class);
+        $rectorConfig->tag(MakeRuleCommand::class, Command::class);
         $rectorConfig->tag(ListRulesCommand::class, Command::class);
 
         $rectorConfig->when(ListRulesCommand::class)

@@ -1,0 +1,44 @@
+<?php
+
+declare(strict_types=1);
+
+namespace __RULE_NAMESPACE__;
+
+use PhpParser\Node;
+use Rector\Core\Rector\AbstractRector;
+use Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+
+/**
+ * @see \__TEST_NAMESPACE__\__RULE_NAME__Test
+ */
+final class __RULE_NAME__ extends AbstractRector
+{
+    public function getRuleDefinition(): RuleDefinition
+    {
+        return new RuleDefinition('Rule definition.', [
+            new CodeSample(
+                <<<'CODE_SAMPLE'
+
+CODE_SAMPLE
+                ,
+                <<<'CODE_SAMPLE'
+
+CODE_SAMPLE
+            ),
+        ]);
+    }
+
+    /**
+     * @return array<class-string<Node>>
+     */
+    public function getNodeTypes(): array
+    {
+        return [];
+    }
+
+    public function refactor(Node $node)
+    {
+
+    }
+}

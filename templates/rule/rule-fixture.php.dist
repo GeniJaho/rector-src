@@ -1,0 +1,11 @@
+<?php
+
+namespace __TEST_NAMESPACE__\Fixture;
+
+?>
+-----
+<?php
+
+namespace __TEST_NAMESPACE__\Fixture;
+
+?>

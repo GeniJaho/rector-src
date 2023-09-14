@@ -1,0 +1,10 @@
+<?php
+
+declare(strict_types=1);
+
+use __RULE_NAMESPACE__\__RULE_NAME__;
+use Rector\Config\RectorConfig;
+
+return static function (RectorConfig $rectorConfig): void {
+    $rectorConfig->rule(__RULE_NAME__::class);
+};
